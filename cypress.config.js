@@ -2,16 +2,21 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
+    defaultCommandTimeout: 10000,
     baseUrl: "https://mcstaging.godfreys.com.au/",
-    $schema: "https://on.cypress.io/cypress.schema.json",
-    projectId: "mimhrk",
+    defaultCommandTimeout: 5000,
     viewportWidth: 1920,
     viewportHeight: 1080,
+
+    $schema: "https://on.cypress.io/cypress.schema.json",
+    projectId: "mimhrk",
     numTestsKeptInMemory: 0,
     supportFile: false,
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
   },
+
+  component: {
+
+  },
+
 });
 

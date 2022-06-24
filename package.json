@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "open cypress": "npx cypress open",
-    "recorded cypress": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536",
-    "recorded godm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 cypress/e2e/godm2-e2e-regression/**/*",
-    "recorded wmm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 cypress/e2e/wmm2-e2e-regression/**/*",
-    "recorded specific script": "npx cypress run --browser chrome --record --key 42437aba-e611-46aa-978d-6416277fb536 -s cypress/e2e/godm2-e2e-regression/accountCreation.cy.js"
+    "recorded specific script": "npx cypress run --browser chrome --record --key 42437aba-e611-46aa-978d-6416277fb536 -s cypress/e2e/godm2-e2e-regression/accountCreation.cy.js",
+    "recorded godm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 -s cypress/e2e/godm2-e2e-regression/**/*",
+    "recorded wmm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 -s cypress/e2e/wmm2-e2e-regression/**/*",
+    "recorded cypress": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536"
   },
   "repository": {
     "type": "git",
