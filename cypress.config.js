@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:1234',
+    baseUrl: "https://mcstaging.godfreys.com.au/",
     $schema: "https://on.cypress.io/cypress.schema.json",
     projectId: "mimhrk",
     viewportWidth: 1920,
