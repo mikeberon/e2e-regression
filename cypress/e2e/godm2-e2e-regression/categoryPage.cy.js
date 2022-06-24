@@ -17,6 +17,5 @@ describe('REG_CategoryPage', () => {
         })
         cy.title().shouild('eq','Bagless Vacuum Cleaners | Godfreys')
         
-
     })
   })
