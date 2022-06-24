@@ -1,0 +1,26 @@
+{
+  "name": "e2e-regression",
+  "version": "1.0.0",
+  "description": "end to end regression scripts",
+  "main": "index.js",
+  "scripts": {
+    "open cypress": "npx cypress open",
+    "recorded cypress": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536",
+    "recorded godm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 --spec cypress/integration/godm2-e2e-regression/**/*",
+    "recorded wmm2": "npx cypress run --record --key 42437aba-e611-46aa-978d-6416277fb536 --spec cypress/integration/wmm2-e2e-regression/**/*",
+    "recorded spec": "npx cypress run --browser chrome --record --key 42437aba-e611-46aa-978d-6416277fb536 --spec cypress/integration/godm2-e2e-regression/accountCreation.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeberon/e2e-regression.git"
+  },
+  "author": "mike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeberon/e2e-regression/issues"
+  },
+  "homepage": "https://github.com/mikeberon/e2e-regression#readme",
+  "devDependencies": {
+    "cypress": "^10.2.0"
+  }
+}
