@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://mcstaging.godfreys.com.au",
+  "txtSearch": "#search",
+  "product": "bagless vacuum",
+  "suggestion": "#klevuSearchingArea:eq(0)",
+  "firstSuggestion": "div.klevu-name:eq(0)",
+  "urlPDP": "https://www.godfreys.com.au/hoover-tornado-bagless-vacuum-cleaner"
+  
+}
