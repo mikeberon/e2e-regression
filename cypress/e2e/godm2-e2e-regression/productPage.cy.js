@@ -23,7 +23,7 @@ describe('REG_Search', () => {
                 password: this.config.basicAuthPassword,
             }
         })
-        // CY URL VALIDATION
+      
         cy.title().should('eq', this.pdpData.titlePDP)
 
 
