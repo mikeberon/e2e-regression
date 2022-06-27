@@ -13,8 +13,10 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
+// index.js
 import './commands'
+const customCommands = require('./commands')
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+module.exports = {
+  commands: customCommands
+}

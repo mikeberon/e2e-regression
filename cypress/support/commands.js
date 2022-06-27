@@ -23,3 +23,46 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+
+Cypress.Commands.add('login', (email, password) => {
+    cy.get('#email')
+        .clear()
+        .should('be.empty')
+        .type(email)
+    cy.get('#pass')
+        .clear()
+        .should('be.empty')
+        .type(password)
+    cy.get('button.action.login.primary').click()
+})
+
+Cypress.Commands.add('search', (searchString) => {
+    cy.get('#search')
+    .clear()
+    .should('be.empty')
+    .type(searchString)
+})
+
+Cypress.Commands.add('verifyURL', (expectedURL) => {
+    cy.url()
+            .should('eq', expectedURL)
+})
+
+Cypress.Commands.add('visitSite', (url, title) => {
+    cy.visit(url)
+    cy.title().should('eq', title)
+})
+
+Cypress.Commands.add('visitWithAuthentication', (url, title, basicUser, basicPass) => {
+    cy.visit(url, {
+        auth: {
+            username: basicUser,
+            password: basicPass,
+        }
+    })
+    
+    cy.title().should('eq', title)
+})
+
