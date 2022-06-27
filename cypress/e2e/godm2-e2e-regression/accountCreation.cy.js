@@ -271,7 +271,7 @@ describe('REG_AccountCreation_Dashboard', function () {
     //     //  .should('eq', this.config.baseUrl + 'customer/account/')
 
     // })
-// CY URL VALIDATION
+
     it('Account - Logout', function () {
         //Logout function
         cy.get(this.accountData.btnAccountHeader)

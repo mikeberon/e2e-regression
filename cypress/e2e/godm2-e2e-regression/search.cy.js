@@ -35,7 +35,7 @@ describe('REG_Search', () => {
 
         cy.get(this.searchData.firstSuggestion)
             .click({ force: true })
-// URL VALIDATION
+
         cy.url()
             .should('eq', this.searchData.urlPDP)
 

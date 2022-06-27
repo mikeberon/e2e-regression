@@ -40,14 +40,14 @@ Cypress.Commands.add('login', (email, password) => {
 
 Cypress.Commands.add('search', (searchString) => {
     cy.get('#search')
-    .clear()
-    .should('be.empty')
-    .type(searchString)
+        .clear()
+        .should('be.empty')
+        .type(searchString)
 })
 
 Cypress.Commands.add('verifyURL', (expectedURL) => {
     cy.url()
-            .should('eq', expectedURL)
+        .should('eq', expectedURL)
 })
 
 Cypress.Commands.add('visitSite', (url, title) => {
@@ -62,7 +62,7 @@ Cypress.Commands.add('visitWithAuthentication', (url, title, basicUser, basicPas
             password: basicPass,
         }
     })
-    
+
     cy.title().should('eq', title)
 })
 

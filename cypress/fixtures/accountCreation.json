@@ -53,7 +53,9 @@
   "txtPhone": "#telephone",
   "drpState": "#region_id",
   "txtPost": "#zip",
-  "drpCountry": "#country"
+  "drpCountry": "#country",
+  "registerPage": "Create New Customer Account",
+  "registerURL": "customer/account/create/"
 
 
 

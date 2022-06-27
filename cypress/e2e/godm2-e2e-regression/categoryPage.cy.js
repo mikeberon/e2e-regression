@@ -23,7 +23,7 @@ describe('REG_CategoryPage', () => {
                 password: this.config.basicAuthPassword,
             }
         })
-// CY URL VALIDATION
+
         cy.title().should('eq', 'Bagless Vacuum Cleaners | Godfreys')
     })
 
