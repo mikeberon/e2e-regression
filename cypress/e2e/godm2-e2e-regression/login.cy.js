@@ -17,10 +17,9 @@ describe('REG_Search', () => {
         return false
     })
 
-
-
     it('Sample runner', function () {
         cy.visitSite(this.accountData.registerURL,this.accountData.registerSite,"","")
     })
+    // CY URL VALIDATION
 
 })
