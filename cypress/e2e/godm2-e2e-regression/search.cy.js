@@ -1,3 +1,5 @@
+import '../../support/commands'
+
 describe('REG_Search', () => {
 
     beforeEach(function () {
@@ -26,10 +28,7 @@ describe('REG_Search', () => {
 
         cy.title().should('eq', "Godfreys | Australia's Vacuum and Cleaning Specialists")
 
-        cy.get(this.searchData.txtSearch)
-            .clear()
-            .should('be.empty')
-            .type(this.searchData.product)
+        cy.search(this.searchData.product)
 
         cy.get(this.searchData.suggestion)
             .should('be.visible')

@@ -1,3 +1,5 @@
+import '../../support/commands'
+
 describe('REG_AccountCreation_Dashboard', function () {
 
     //  Regression Test Scope: Account Creation, Login and Logout
@@ -26,11 +28,13 @@ describe('REG_AccountCreation_Dashboard', function () {
 
         //Register customer
         cy.visit("customer/account/create/", {
-            auth: {
-                username: this.config.basicAuthUsername,
-                password: this.config.basicAuthPassword,
-            }
+            // auth: {
+            //     username: this.config.basicAuthUsername,
+            //     password: this.config.basicAuthPassword,
+            // }
         })
+        cy.title().should('eq', "Create New Customer Account")
+
         cy.get(this.accountData.txtFirstname)
             .type(this.accountData.firstname)
         cy.get(this.accountData.txtLastname)
@@ -70,10 +74,10 @@ describe('REG_AccountCreation_Dashboard', function () {
         
         cy.get(this.accountData.txtSearch, { timeout: 10000 }).should('be.visible');
         cy.visit("customer/account/login", {
-            auth: {
-                username: this.accountData.basicAuthUsername,
-                password: this.accountData.basicAuthPassword,
-            }
+            // auth: {
+            //     username: this.accountData.basicAuthUsername,
+            //     password: this.accountData.basicAuthPassword,
+            // }
         })
         
         //Login
@@ -212,6 +216,7 @@ describe('REG_AccountCreation_Dashboard', function () {
                 password: this.accountData.basicAuthPassword,
             }
         })
+        cy.title().should('eq', "Customer Login")
         //Test login validation (using wrong credentials)
         cy.get(this.accountData.txtEmailLogin)
             .type(this.newemail)
@@ -227,34 +232,45 @@ describe('REG_AccountCreation_Dashboard', function () {
     })
 
     it('Account - Login', function () {
-        //Login
         cy.visit("customer/account/login", {
             auth: {
                 username: this.config.basicAuthUsername,
                 password: this.config.basicAuthPassword,
             }
         })
-        cy.get(this.accountData.txtEmailLogin)
-            .clear()
-            .should('be.empty')
-            .type(this.newemail)
-        //.type(newemail)
-
-        cy.get(this.accountData.txtPassLogin)
-            .clear()
-            .should('be.empty')
-            .type(this.accountData.password)
-        cy.get(this.accountData.btnLogin)
-            .click()
-
-        //Customer successfully logs in
-        // Remove comment once issue is resolved 
-        //cy.contains(this.accountData.msgSuccessfulLogin).should('be.visible')
-        //cy.screenshot("Successful login and redirection to My account dashboard")
-        //cy.url()
-        //  .should('eq', this.config.baseUrl + 'customer/account/')
-
+        cy.title().should('eq', "Customer Login")
+        cy.login(this.newemail,this.accountData.password)
     })
+
+    // it('Account - Login', function () {
+    //     //Login
+    //     cy.visit("customer/account/login", {
+    //         auth: {
+    //             username: this.config.basicAuthUsername,
+    //             password: this.config.basicAuthPassword,
+    //         }
+    //     })
+    //     cy.get(this.accountData.txtEmailLogin)
+    //         .clear()
+    //         .should('be.empty')
+    //         .type(this.newemail)
+    //     //.type(newemail)
+
+    //     cy.get(this.accountData.txtPassLogin)
+    //         .clear()
+    //         .should('be.empty')
+    //         .type(this.accountData.password)
+    //     cy.get(this.accountData.btnLogin)
+    //         .click()
+
+    //     //Customer successfully logs in
+    //     // Remove comment once issue is resolved 
+    //     //cy.contains(this.accountData.msgSuccessfulLogin).should('be.visible')
+    //     //cy.screenshot("Successful login and redirection to My account dashboard")
+    //     //cy.url()
+    //     //  .should('eq', this.config.baseUrl + 'customer/account/')
+
+    // })
 
     it('Account - Logout', function () {
         //Logout function
@@ -264,5 +280,7 @@ describe('REG_AccountCreation_Dashboard', function () {
             .click()
         //cy.contains('You are signed out').should('be.visible')
         cy.screenshot("Successful logout")
+        cy.verifyURL('https://mcstaging.godfreys.com.au/customer/account/logoutSuccess/')
+        
     })
 })
