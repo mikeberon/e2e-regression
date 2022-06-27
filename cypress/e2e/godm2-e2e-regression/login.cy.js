@@ -18,7 +18,7 @@ describe('REG_Search', () => {
     })
 
 
-    it('Account - Login', function () {
+    it('Sample', function () {
         cy.visitSite(this.accountData.registerURL,this.accountData.registerSite,"","")
     })
 
