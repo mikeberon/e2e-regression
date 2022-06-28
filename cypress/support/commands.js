@@ -55,6 +55,12 @@ Cypress.Commands.add('visitSite', (url, title) => {
     cy.title().should('eq', title)
 })
 
+Cypress.Commands.add('clickFooter', (footer, title) => {
+    cy.get(footer).click()
+    cy.title().should('eq', title)
+
+})
+
 Cypress.Commands.add('visitWithAuthentication', (url, title, basicUser, basicPass) => {
     cy.visit(url, {
         auth: {
@@ -64,5 +70,7 @@ Cypress.Commands.add('visitWithAuthentication', (url, title, basicUser, basicPas
     })
 
     cy.title().should('eq', title)
+
+
 })
 
