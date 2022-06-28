@@ -1,6 +1,6 @@
 import '../../support/commands'
 
-describe('REG_SAMPLE', () => {
+describe('REG_Homepage', () => {
 
     beforeEach(function () {
         cy.fixture('accountCreation.json').then(function (data) {
