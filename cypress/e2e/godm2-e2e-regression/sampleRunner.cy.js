@@ -21,5 +21,4 @@ describe('REG_SAMPLE', () => {
         cy.visitSite(this.accountData.registerURL,this.accountData.registerSite,"","")
     })
    
-
 })

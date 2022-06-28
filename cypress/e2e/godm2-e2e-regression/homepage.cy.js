@@ -3,8 +3,8 @@ import '../../support/commands'
 describe('REG_Homepage', () => {
 
     beforeEach(function () {
-        cy.fixture('accountCreation.json').then(function (data) {
-            this.accountData = data
+        cy.fixture('homepage.json').then(function (data) {
+            this.homepage = data
         })
         cy.fixture('siteConfig.json').then(function (data) {
             this.config = data
@@ -17,9 +17,25 @@ describe('REG_Homepage', () => {
         return false
     })
 
-    it('THIS IS A SAMPLE RUNNER', function () {
-        cy.visitSite(this.accountData.registerURL,this.accountData.registerSite,"","")
+    it('Homepage - Navigation', function () {
+        cy.visitSite("/","Godfreys | Australia's Vacuum and Cleaning Specialists")
     })
+
+    it('Homepage - Page elements', function () {
+        cy.isVisible(this.homepage.carousel)
+        cy.isVisible(this.homepage.carouselOptions)
+        cy.isVisible(this.homepage.bestSellerTitle)
+        cy.isVisible(this.homepage.bestSeller)
+        cy.isVisible(this.homepage.bestSellerOptions)
+        cy.isVisible(this.homepage.widgetPLP)
+        cy.isVisible(this.homepage.cnc)
+        cy.isVisible(this.homepage.vacFinder)
+        // cy.get(this.homepage.recentlyViewedTitle).should('be.visible')
+        // cy.get(this.homepage.recentlyViewed).should('be.visible')
+        cy.isVisible(this.homepage.customerReviewsTitle)
+    })
+
+    
    
 
 })

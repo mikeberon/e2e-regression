@@ -15,7 +15,7 @@ describe('REG_ProductPage', () => {
         return false
     })
 
-    it('PDP - NAvigate to PDP', function () {
+    it('PDP - Navigate to PDP', function () {
 
         cy.visit(this.config.baseUrl + this.pdpData.pdpURL, {
             auth: {

@@ -1,6 +1,20 @@
 {
-    "baseUrl": "https://mcstaging.whitworths.com.au",
-    "email": "mike.beron+autostg@acidgreen.com.au"
+    "carousel": "div[data-pb-style='VDVDIPY']",
+    "carouselOptions": "div[class='pagebuilder-slider homepage-slider slick-initialized slick-slider slick-dotted'] ul[role='tablist']",
+    "bestSellerTitle": "div[id='cbar_widget_31715'] div[class='cbar-wdes-title']",
+    "bestSeller": "div[class='cbar-wdes-wrapper slick-initialized slick-slider slick-dotted'] div[class='slick-list draggable']",
+    "bestSellerOptions": "div[class='cbar-wdes-wrapper slick-initialized slick-slider slick-dotted'] ul[role='tablist']",
+    "widgetPLP": ".widget.cat-banners",
+    "cnc": ".pagebuilder-mobile-hidden[src='https://mcstaging.godfreys.com.au/media/wysiwyg/click-collect-desktop_1.png']",
+    "vacFinder": ".pagebuilder-mobile-hidden[src='https://mcstaging.godfreys.com.au/media/wysiwyg/vacfinder-desktop.png']",
+    "recentlyViewedTitle": "div[id='cbar_widget_34824'] div[class='cbar-wdes-title']",
+    "recentlyViewed": "div[class='cbar-wdes-wrapper slick-initialized slick-slider'] div[class='slick-list draggable']",
+    "customerReviewsTitle": "div[id='feefo-homepage-wrapper'] h2"
+     
+
+
+
+
     
   }
   
