@@ -39,12 +39,12 @@ describe('REG_AccountCreation_Dashboard', function () {
             .type(this.accountData.firstname)
         cy.get(this.accountData.txtLastname)
             .type(this.accountData.lastname)
-        
+
         //Sign Up for Newsletter checkbox
         cy.get(this.accountData.chkNewsletter)
             .check()
             .should('be.checked')
-        
+
         //Allow remote shopping assistance checkbox
         cy.get(this.accountData.chkRemote).check()
 
@@ -71,7 +71,7 @@ describe('REG_AccountCreation_Dashboard', function () {
     })
     //Update Account Name, Email
     it('Account - Update account details', function () {
-        
+
         cy.get(this.accountData.txtSearch, { timeout: 10000 }).should('be.visible');
         cy.visit("customer/account/login", {
             // auth: {
@@ -79,7 +79,7 @@ describe('REG_AccountCreation_Dashboard', function () {
             //     password: this.accountData.basicAuthPassword,
             // }
         })
-        
+
         //Login
         cy.get(this.accountData.txtEmailLogin)
             .clear()
@@ -93,7 +93,7 @@ describe('REG_AccountCreation_Dashboard', function () {
 
         cy.get(this.accountData.btnLogin)
             .click()
-        
+
         //Update Account Name, Email
         cy.get(this.accountData.tabAccountInfo)
             .should('be.visible')
@@ -239,7 +239,7 @@ describe('REG_AccountCreation_Dashboard', function () {
             }
         })
         cy.title().should('eq', "Customer Login")
-        cy.login(this.newemail,this.accountData.password)
+        cy.login(this.newemail, this.accountData.password)
     })
 
     // it('Account - Login', function () {
@@ -281,6 +281,6 @@ describe('REG_AccountCreation_Dashboard', function () {
         //cy.contains('You are signed out').should('be.visible')
         cy.screenshot("Successful logout")
         cy.verifyURL('https://mcstaging.godfreys.com.au/customer/account/logoutSuccess/')
-        
+
     })
 })
