@@ -1,6 +1,45 @@
 {
     "baseUrl": "https://mcstaging.godfreys.com.au",
-    "baglessVacuums": "a[title='Godfreys Bagless Vacuums']"
+    "baglessVacuums": "a[title='Godfreys Bagless Vacuums']",
+    "baggedVacuums": "a[title='Godfreys Bagged Vacuums']",
+    "stickVacuums": "a[title='Godfreys Stick Vacuums']",
+    "robotVacuums": "a[title='Godfreys Robot Vacuums']",
+    "uprightVacuums": "a[title='Godfreys Upright Vacuums']",
+    "handheldVacuums": "a[title='Godfreys Handheld Vacuums']",
+    "wetAndDryVacuums": "a[title='Godfreys Wet & Dry Vacuums']",
+    "commercialVacuums": "a[title='Godfreys Commercial Vacuums']",
+    "carpetShampooers": "a[title='Godfreys Carpet Shampooers']",
+    "hardFloorCleaners": "a[title='Godfreys Hard Floor Cleaners']",
+    "steamMops": "a[title='Godfreys Steam Mops']",
+    "steamCleaners": "a[title='Godfreys Steam Cleaners']",
+    "vacFinder": "a[href='/vacfinder']",
+    "accessoryFinder": "a[href='/vacuum-bags-parts-accessories/accessory-finder']",
+    "afterPay": "a[href='/afterpay']",
+    "humm": "a[href='/godfreys-now-accepts-humm']",
+    "openPay": "a[href='/openpay']",
+    "klarnaFAQs": "#html-body > div.page-wrapper > footer > div.footer.content > div:nth-child(1) > div > div.pagebuilder-column-group > div.pagebuilder-column.footer-grid-col-2 > div:nth-child(2) > div > div > div > div > ul > li:nth-child(4) > a",
+    "klarnaTermsAndConditions": "a[href='https://cdn.klarna.com/1.0/shared/content/legal/terms/0/en_au/paylaterin4?_gl=1*127wbf3*_gcl_aw*R0NMLjE2MzM1ODE0OTEuQ2p3S0NBandrdldLQmhCNEVpd0EtR0hqRmlzM2lSSWVTNTFpc3dneXN5VVNUbzJmcjNaMVRLSTVDRTJCRkgwaFp6aXlnZWFSQktDbXZCb0MzdUlRQXZEX0J3RQ']",
+    "klarnaPrivacyPolicy": "a[href='https://cdn.klarna.com/1.0/shared/content/legal/terms/0/en_au/privacy?_gl=1*127wbf3*_gcl_aw*R0NMLjE2MzM1ODE0OTEuQ2p3S0NBandrdldLQmhCNEVpd0EtR0hqRmlzM2lSSWVTNTFpc3dneXN5VVNUbzJmcjNaMVRLSTVDRTJCRkgwaFp6aXlnZWFSQktDbXZCb0MzdUlRQXZEX0J3RQ']",
+    "clickAndCollect": "a[href='click-and-collect-at-godfreys']",
+    "theDirt": "a[href='/blog']",
+    "allergyAware": "a[href='/allergy-aware']",
+    "aboutUs": "a[href='/about-us']",
+    "companyOverview": "a[href='/company-overview']",
+    "careerOpportunities": "#linkSeek",
+    "contactUs": "body > div:nth-child(14) > footer:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)",
+    "findAGofreysStore": "a[href='/storelocator/']",
+    "termsAndConditions": "a[href='/terms-and-conditions']",
+    "deliveryInformation": "a[href='/delivery-information']",
+    "vacuumsRepairsAndService": "a[href='/vacuum-servicing-repairs']",
+    "privacyPolicy": "a[href='https://godfreys.com.au/privacy-policy']",
+    "privacyNotice": "a[href='https://godfreys.com.au/media/wysiwyg/Agreements/AU_338_Privacy_Policy_POS_Privacy_Notice_FA_Web.pdf']",
+    "tradeInDiscounts": "a[href='/trade-ins']",
+    "productSafetyRecalls": "a[href='/product-safety-recalls']",
+    "emailUs": "body > div:nth-child(14) > footer:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h4:nth-child(3) > span:nth-child(1) > a:nth-child(1) > strong:nth-child(1)"
+
+
+
+
     
+
 }
-  
