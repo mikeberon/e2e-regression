@@ -21,7 +21,6 @@ describe('REG_Footer', function () {
     it('Footer validation', function () {
 
         //Navigate to homepage
-
         cy.visit("/")
         cy.title().should('eq', "Godfreys | Australia's Vacuum and Cleaning Specialists")
 
