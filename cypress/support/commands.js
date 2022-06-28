@@ -62,7 +62,6 @@ Cypress.Commands.add('visitWithAuthentication', (url, title, basicUser, basicPas
             password: basicPass,
         }
     })
-
     cy.title().should('eq', title)
 })
 
