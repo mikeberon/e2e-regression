@@ -1,4 +1,4 @@
-describe('REG_Search', () => {
+describe('REG_ProductPage', () => {
 
     beforeEach(function () {
         cy.fixture('productPage.json').then(function (data) {
