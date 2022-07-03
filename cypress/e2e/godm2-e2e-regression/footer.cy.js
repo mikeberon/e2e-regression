@@ -18,14 +18,15 @@ describe('REG_Footer', function () {
     })
 
 
-    it('Footer validation', function () {
+    it('Navigate to homepage', function () {
 
         //Navigate to homepage
         cy.visit("/")
         cy.title().should('eq', "Godfreys | Australia's Vacuum and Cleaning Specialists")
-        
-        //Vacuum Cleaners
 
+    })
+    it('Vacuum Cleaners', function () {
+        
         //Bagless Vacuums
         cy.clickFooter(this.footerData.baglessVacuums,"Bagless Vacuum Cleaners | Godfreys")
         //Bagged Vacuums
@@ -42,8 +43,9 @@ describe('REG_Footer', function () {
         cy.clickFooter(this.footerData.wetAndDryVacuums,"Home & Industrial Wet and Dry Vacuum Cleaners | Godfreys")
         //Commercial Vacuums
         cy.clickFooter(this.footerData.commercialVacuums,"Commercial & Industrial Vacuum Cleaners | Commercial Vacuums")
-        
-        //Steam & Shampoo Cleaning
+    })
+    
+    it('Steam & Shampoo Cleaning', function () { 
 
         //Carpet Shampooers
         cy.clickFooter(this.footerData.carpetShampooers,"Carpet Shampooers | Carpet Cleaner Vacuums | Godfreys")
@@ -53,16 +55,19 @@ describe('REG_Footer', function () {
         cy.clickFooter(this.footerData.steamMops,"Steam Mops | Bissell Steam Mops | Godfreys")
         //Steam Cleaner
         cy.clickFooter(this.footerData.steamCleaners,"Steam Cleaners | Carpet Steam Cleaners | Godfreys")
-
-        //Search Tools
+    })   
+        
+    it('Search Tools', function () {
 
         //VacFinder
         cy.clickFooter(this.footerData.vacFinder,"Machine Finder")
         //AccessoryFinder 
         cy.clickFooter(this.footerData.accessoryFinder,"Vacuum Cleaner Accessories | Godfreys")
         
-        //Finance
-        
+     })   
+
+    it('Finance', function () {
+
         //AfterPay
         cy.clickFooter(this.footerData.afterPay,"AfterPay")
         //Humm
@@ -80,26 +85,34 @@ describe('REG_Footer', function () {
         cy.clickFooter(this.footerData.klarnaPrivacyPolicy,"Klarna: Klarna’s Privacy Policy")
         cy.visit("/")
         */
+     })   
        
-        //About the Site
+    it('About the Site', function () { 
+
         //Click and Collect
         cy.clickFooter(this.footerData.clickAndCollect,"Click & Collect at Godfreys")
         //The Dirt
         cy.clickFooter(this.footerData.theDirt,"Blog and Expert Advice")
         //Allergy Aware
         cy.clickFooter(this.footerData.allergyAware,"Godfreys Allergy Aware |Cleaning Solutions Recommended For A")
+    })   
+       
+    it('Corporate', function () {
 
-        //Corporate
         //About Us
         cy.clickFooter(this.footerData.aboutUs,"About Us")
         //Company Overview
         cy.clickFooter(this.footerData.companyOverview,"Company Overview")
-
-        //Godfreys Careers
+     })   
+    
+    it('Godfreys Careers', function () {
+        
         //Career Opportunities
         cy.clickFooter(this.footerData.careerOpportunities,"Career Opportunities")
+     })   
 
-        //Customer Service
+    it('Customer Service', function () {
+
         //Contact Us
         cy.clickFooter(this.footerData.contactUs,"Godfreys Customer Service | Contact Us")
         //Find A Gofreys' Store
@@ -117,10 +130,14 @@ describe('REG_Footer', function () {
         cy.clickFooter(this.footerData.tradeInDiscounts,"Trade In Your Old Vacuum & Save")
         //Product Safety Recalls
         cy.clickFooter(this.footerData.productSafetyRecalls,"Product Safety Recall Information")
-        
-        //Contact Us
+     })   
+
+    it('Contact Us', function () {
+
         //Email Us
         cy.clickFooter(this.footerData.emailUs,"Godfreys Customer Service | Contact Us")
+     })   
+        
 
 
 
@@ -132,7 +149,8 @@ describe('REG_Footer', function () {
 
 
 
-    })
+
+    
 })
 
 
